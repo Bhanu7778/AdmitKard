@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mobile Number Verification</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="screen" id="screen1">
+            <h1><span style="color:blue">Admit</span>Kard</h1>
+            <p>Welcome Back</p>
+            <P>Please sign in to your account</P>
+            <select id="countryCode">
+                <option value="+1">+1 (USA)</option>
+                <option value="+91">+91 (IND)</option>
+                <option value="+7">+7 (Russia)</option>
+                <option value="+1">+81 (China)</option>
+                <!-- Add more country codes as needed -->
+            </select>
+            <input type="text" id="mobileNumber" placeholder="Enter Mobile Number">
+            <p>we will send you a one time SMS message</p>
+            <button id="sendOTP">Sign in with OTP</button>
+        </div>
+        <div class="screen" id="screen2">
+            <img src="https://media.istockphoto.com/id/1369134714/vector/shield-user-with-checkmark.jpg?s=612x612&w=0&k=20&c=w9G45udXfBhRMYOLinHIXPZXbU1WSu4qtR11qkK8JIQ=" class="s-2Image" />
+            <h3>Please Veify Mobile Number</h3>
+            <p>An OTP is sent to Mobile Number</p>
+            <div class="otp-input">
+                <input type="text-1" id="digit1" maxlength="1">
+                <input type="text-1" id="digit2" maxlength="1">
+                <input type="text-1" id="digit3" maxlength="1">
+                <input type="text-1" id="digit4" maxlength="1">
+            </div>
+            <p>Didn't recived the code?<span style="color:orange"> Resend</span></p>
+            <button id="verifyOTP">Verify</button>
+        </div>
+        <div class="screen" id="screen3">
+            <img src="https://www.pushengage.com/wp-content/uploads/2022/02/Best-Website-Welcome-Message-Examples.png" class="Success-img">
+            <h1>Welcome to AdmitKard</h1>
+            <p>In order to provide a custom experince</p>
+            <h6>We need to ask you few questions</h6>
+            <button>Get stared</button>
+            <p>*This will only take 5 min</p>
+        </div>
+        <div class="screen" id="failureScreen">
+            <h1>Failure Screen</h1>
+            <p>OTP Verification Failed. Please try again.</p>
+        </div>
+    </div>
+    <div id="snackbar"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>

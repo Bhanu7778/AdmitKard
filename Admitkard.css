@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.screen {
+    display: none;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: orange;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#screen1 {
+    display: block;
+}
+
+.otp-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="text"] {
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    font-size: 16px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="text-1"] {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 16px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#snackbar {
+    display: none;
+    min-width: 250px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+}
+
+.Success-img {
+    height: 50%;
+    width: 50%;
+}
+
+.s-2Image {
+    height: 30%;
+    width: 30%;
+}
+
+.show {
+    display: block;
+}
